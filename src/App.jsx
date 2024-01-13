@@ -1,5 +1,3 @@
-import Sidebar from "./components/SideBar";
-import Type from "./components/TypeEffect";
 import {
   BrowserRouter as Router,
   Route,

@@ -2,17 +2,8 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
-import {
-  Home,
-  FolderKanban,
-  File,
-  Contact,
-  Linkedin,
-  Code,
-  Instagram,
-  Github,
-} from "lucide-react";
-
+import { Home, FolderKanban, File, Contact, Linkedin } from "lucide-react";
+import { FaCode } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
@@ -20,8 +11,8 @@ const HtmlTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
 ))(({ theme }) => ({
   [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: "#976391",
-    color: "rgba(0, 0, 0, 0.87)",
+    backgroundColor: "#220b4e",
+    color: "#fff",
     maxWidth: 220,
     fontSize: theme.typography.pxToRem(12),
   },
@@ -29,13 +20,10 @@ const HtmlTooltip = styled(({ className, ...props }) => (
 
 export default function Sidebar(props) {
   return (
-    <aside
-      className="flex h-screen w-16 flex-col items-center justify-center overflow-y-auto outline-none py-8"
-      style={{ backgroundColor: "#48639C" }}
-    >
+    <aside className="flex h-screen w-16 flex-col items-center justify-center overflow-y-auto outline-none py-8 fixed bg-[#b691ff]">
       <nav className="flex flex-1 flex-col items-center space-y-6">
         <a href="#">
-          <Code size={40} />
+          <FaCode size={40} />
         </a>
         <a
           href="#"
