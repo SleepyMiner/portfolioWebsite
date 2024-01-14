@@ -1,5 +1,4 @@
 import React from "react";
-import { Divider } from "@mui/material";
 const SkillNames = [
   {
     id: 1,
@@ -62,9 +61,11 @@ const SkillNames = [
 function Skills() {
   return (
     <>
-      <section className="section skills" id="skills">
+      <section
+        className="flex flex-col items-center justify-center lg:ml-16 mx-10 lg:mx-0"
+        id="skills"
+      >
         <h2 className="text-5xl text-[#b691ff] text-center">Skills</h2>
-        <Divider variant="middle" />
         <div className="mx-0 my-auto flex justify-center items-center flex-wrap text-[#410f70] text-xl space-x-6 mb-5">
           {SkillNames.map((skill) => (
             <button

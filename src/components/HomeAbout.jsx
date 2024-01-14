@@ -4,12 +4,12 @@ function HomeAbout() {
   return (
     <>
       <section>
-        <div className=" text-[#ffffff] py-20 px-10">
-          <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
-            <div className="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3">
-              <div className="h-48 flex flex-wrap justify-start content-center">
+        <div className=" text-[#ffffff] py-10  px-10">
+          <div className="container mx-auto flex lg:flex-row items-center justify-center flex-col my-10 md:my-10 ">
+            <div className="p-8 ml-0 md:ml-12 lg:w-2/3">
+              <div className="mb-16 lg:mb-0 flex flex-wrap justify-start content-center  ">
                 <img
-                  className="mt-0 xl:block max-h-96 rounded-full"
+                  className="h-80 mt-0 xl:block max-h-96 rounded-full"
                   src={myPic}
                 />
               </div>
