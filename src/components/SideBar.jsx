@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
-
+import { Link } from "react-router-dom";
 import {
   Home,
   FolderKanban,
@@ -37,11 +37,11 @@ export default function Sidebar(props) {
     <>
       <aside className="lg:flex lg:h-screen lg:w-16 lg:flex-col lg:items-center lg:justify-center lg:overflow-y-auto lg:outline-none lg:py-8 lg:fixed md:bg-[#b691ff] hidden">
         <nav className="flex flex-1 flex-col items-center space-y-6">
-          <a href="/">
+          <Link to="/">
             <FaCode size={40} />
-          </a>
-          <a
-            href="/"
+          </Link>
+          <Link
+            to="/"
             className="rounded-lg p-1.5 text-gray-700 transition-colors duration-200 hover:bg-gray-100 focus:outline-none"
             style={{ backgroundColor: `${props.home}` }}
           >
@@ -55,10 +55,10 @@ export default function Sidebar(props) {
             >
               <Home size={24} />
             </HtmlTooltip>
-          </a>
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            to="#"
             className="rounded-lg p-1.5 text-gray-700 transition-colors duration-200 hover:bg-gray-100 focus:outline-none"
           >
             <HtmlTooltip
@@ -71,10 +71,10 @@ export default function Sidebar(props) {
             >
               <FolderKanban size={24} />
             </HtmlTooltip>
-          </a>
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            to="#"
             className="rounded-lg p-1.5 text-gray-700 transition-colors duration-200 hover:bg-gray-100 focus:outline-none"
           >
             <HtmlTooltip
@@ -87,10 +87,10 @@ export default function Sidebar(props) {
             >
               <File size={24} />
             </HtmlTooltip>
-          </a>
+          </Link>
 
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="rounded-lg p-1.5 text-gray-700 transition-colors duration-200 hover:bg-gray-100 focus:outline-none"
             style={{ backgroundColor: `${props.contact}` }}
           >
@@ -104,7 +104,7 @@ export default function Sidebar(props) {
             >
               <Contact size={24} />
             </HtmlTooltip>
-          </a>
+          </Link>
         </nav>
 
         <div className="flex flex-col items-center space-y-6">
@@ -157,38 +157,38 @@ export default function Sidebar(props) {
               </div>
               <div className="mt-6">
                 <nav className="grid gap-y-4">
-                  <a
-                    href="/"
+                  <Link
+                    to="/"
                     className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
                   >
                     <span className="ml-3 text-base font-medium text-gray-900">
                       Home
                     </span>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
                   >
                     <span className="ml-3 text-base font-medium text-gray-900">
                       Projects
                     </span>
-                  </a>
-                  <a
-                    href="#"
+                  </Link>
+                  <Link
+                    to="#"
                     className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
                   >
                     <span className="ml-3 text-base font-medium text-gray-900">
                       Resume
                     </span>
-                  </a>
-                  <a
-                    href="/contact"
+                  </Link>
+                  <Link
+                    to="/contact"
                     className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
                   >
                     <span className="ml-3 text-base font-medium text-gray-900">
                       Contact
                     </span>
-                  </a>
+                  </Link>
                 </nav>
               </div>
               <div className="mt-4 w-full flex flex-row items-center justify-center gap-7">
