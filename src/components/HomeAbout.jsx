@@ -4,7 +4,7 @@ function HomeAbout() {
   return (
     <>
       <section>
-        <div className=" text-[#ffffff] py-10  px-10">
+        <div className=" text-[#ffffff] py-10 px-10">
           <div className="container mx-auto flex lg:flex-row items-center justify-center flex-col my-10 md:my-10 ">
             <div className="p-8 ml-0 md:ml-12 lg:w-2/3">
               <div className="mb-16 lg:mb-0 flex flex-wrap justify-start content-center  ">
@@ -14,7 +14,7 @@ function HomeAbout() {
                 />
               </div>
             </div>
-            <div className="flex flex-col lg:w-1/3 justify-end content-center text-justify mr-8">
+            <div className="flex flex-col lg:w-1/3 lg:justify-end lg:content-center lg:text-justify lg:mr-8 text-center">
               <h1 className="text-3xl md:text-5xl mb-2 text-[#b691ff] tracking-loose">
                 My Introduction
               </h1>

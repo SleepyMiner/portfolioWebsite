@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import Typography from "@mui/material/Typography";
+
 import {
   Home,
   FolderKanban,
@@ -132,10 +133,10 @@ export default function Sidebar(props) {
         </div>
       </aside>
 
-      <div className="lg:hidden sm:block">
+      <div className="lg:hidden absolute">
         <Menu
           onClick={toggleMenu}
-          className="h-10 w-10 cursor-pointer text-[#b691ff] m-4  "
+          className="h-12 w-12 cursor-pointer text-[#b691ff] m-4  "
         />
       </div>
       {isMenuOpen && (
