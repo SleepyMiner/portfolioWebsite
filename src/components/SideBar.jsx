@@ -58,8 +58,9 @@ export default function Sidebar(props) {
           </Link>
 
           <Link
-            to="#"
+            to="/projects"
             className="rounded-lg p-1.5 text-gray-700 transition-colors duration-200 hover:bg-gray-100 focus:outline-none"
+            style={{ backgroundColor: `${props.projects}` }}
           >
             <HtmlTooltip
               title={
@@ -74,8 +75,9 @@ export default function Sidebar(props) {
           </Link>
 
           <Link
-            to="#"
+            to="/resume"
             className="rounded-lg p-1.5 text-gray-700 transition-colors duration-200 hover:bg-gray-100 focus:outline-none"
+            style={{ backgroundColor: `${props.resume}` }}
           >
             <HtmlTooltip
               title={
@@ -110,14 +112,14 @@ export default function Sidebar(props) {
         <div className="flex flex-col items-center space-y-6">
           <a
             href="https://github.com/SleepyMiner"
-            className="rounded-lg p-1.5 text-gray-700 transition-colors duration-200 focus:outline-none hover:bg-purple-600"
+            className="rounded-lg p-1.5 text-gray-700 transition-colors duration-200 focus:outline-none hover:bg-purple-700"
             target="_blank"
           >
             <FaGithub size={24} />
           </a>
           <a
             href="https://www.linkedin.com/in/swayam-gupta-830ab227b"
-            className="rounded-lg p-1.5 text-gray-700 transition-colors duration-200 focus:outline-none hover:bg-blue-400"
+            className="rounded-lg p-1.5 text-gray-700 transition-colors duration-200 focus:outline-none hover:bg-blue-600"
             target="_blank"
           >
             <Linkedin size={24} />
@@ -166,7 +168,7 @@ export default function Sidebar(props) {
                     </span>
                   </Link>
                   <Link
-                    to="#"
+                    to="/projects"
                     className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
                   >
                     <span className="ml-3 text-base font-medium text-gray-900">
@@ -174,7 +176,7 @@ export default function Sidebar(props) {
                     </span>
                   </Link>
                   <Link
-                    to="#"
+                    to="/resume"
                     className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
                   >
                     <span className="ml-3 text-base font-medium text-gray-900">

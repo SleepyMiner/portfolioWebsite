@@ -1,7 +1,44 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { ArrowRight } from "lucide-react";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+import { Link } from "react-router-dom";
 
 function ContactForm() {
+  const [submitted, setSubmitted] = React.useState(false);
+  const form = useRef();
+  const sendEmail = (e) => {
+    setSubmitted(true);
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_8wvm41c",
+        "template_4pcitfy",
+        form.current,
+        "9bGWH5u17tU6PnZPZ"
+      )
+      .then(
+        () => {
+          const MySwal = withReactContent(Swal);
+          MySwal.fire({
+            title: "Sent",
+            text: "The email was sent successfully",
+            icon: "success",
+          }).then((result) => {
+            if (result) {
+              setSubmitted(false);
+              window.location.href = "/";
+            }
+          });
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section>
       <div className="w-full h-screen flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
@@ -9,11 +46,7 @@ function ContactForm() {
           <h2 className="text-center text-2xl font-bold leading-tight text-white">
             Contact Me
           </h2>
-          <form
-            action="https://formsubmit.co/swayamgupta5698@gmail.com"
-            method="POST"
-            onSubmit={(e) => e.preventDefault()}
-          >
+          <form ref={form} onSubmit={sendEmail}>
             <div className="space-y-5">
               <div>
                 <label
@@ -57,6 +90,7 @@ function ContactForm() {
                 <button
                   type="submit"
                   className="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
+                  disabled={submitted}
                 >
                   Send <ArrowRight className="ml-2" size={16} />
                 </button>
