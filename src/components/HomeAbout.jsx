@@ -25,7 +25,7 @@ function HomeAbout() {
                     Tech Stacks and Languages.
                   </li>
                   <li className="mb-3">
-                    I have learnt a lot of userful things in my journey of
+                    I have learnt a lot of useful things in my journey of
                     building projects.
                   </li>
                   <li className="mb-3">
