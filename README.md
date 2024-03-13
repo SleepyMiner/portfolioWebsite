@@ -4,11 +4,26 @@
 This is my personal portfolio website made to showcase my projects and personal info.
 
 
+## Features
+
+- Interactive Project Showcase: Presents a well-organized display of your projects.
+- Contact Form: Enables potential employers or collaborators to easily reach out.
+- Responsive Design: Ensures optimal viewing experience across various devices (desktops, tablets, mobiles).
+- User-Friendly Interface: Utilizes MaterialUI components for a clean and intuitive layout.
+
+
 ## Tech Stack
 
-**Frontend:** React, Material UI, TailwindCSS
+**Client:** React, Material UI, TailwindCSS
 
-**Backend:** Node, Email JS
+**Server:** Node, Emailjs
+
+
+## Demo
+
+The demo to this website is hosted at:
+
+[Portfolio Website](https://swayam-gupta.vercel.app/)
 
 
 ## Run Locally
@@ -36,13 +51,6 @@ Start the server
 ```bash
   npm run dev
 ```
-
-
-## Demo
-
-The demo to this website is hosted at:
-
-[Portfolio Website](https://swayam-gupta.vercel.app/)
 
 
 ## Authors
