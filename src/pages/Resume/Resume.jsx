@@ -29,6 +29,7 @@ const Resume = () => {
             </a>
             <Document file={pdf} className="py-10">
               <Page pageNumber={1} />
+              <Page pageNumber={2} />
             </Document>
           </div>
         </Grid>
